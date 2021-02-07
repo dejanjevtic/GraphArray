@@ -22,6 +22,13 @@ class Graph{
                 graph.get(u).add(v);
         }
 
+        void stampajGraf(){
+            for(int i=0; i<V;i++){
+                System.out.print("cvor:" + i);
+                for(int x: graph.get(i)) System.out.print("->" +x);
+                System.out.println();
+            }
+        }
 }
 
 public class GraphArrayList {
