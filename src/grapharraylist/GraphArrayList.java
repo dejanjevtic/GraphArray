@@ -38,6 +38,14 @@ public class GraphArrayList {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Graph g = new Graph(5);
+        g.poveziCvorove(0,1);
+        g.poveziCvorove(3,2);
+        g.poveziCvorove(2,4);
+        g.poveziCvorove(1,4);
+        g.poveziCvorove(3,1);
+        g.poveziCvorove(2,0);
+        g.stampajGraf();
     }
     
 }
