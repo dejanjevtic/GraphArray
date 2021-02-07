@@ -1,14 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package grapharraylist;
 
+package grapharraylist;
+import java.util.ArrayList;
 /**
  *
  * @author Dejan
  */
+
+class Graph{
+        ArrayList<ArrayList<Integer>> graph;
+        int V;
+        Graph(int nodes){
+            V = nodes;
+            graph = new ArrayList<ArrayList<Integer>>();
+            for(int i=0; i<V;i++){
+                graph.add(new ArrayList<Integer>());
+            }
+        }
+        
+        void poveziCvorove(int v, int u){
+                graph.get(v).add(u);
+                graph.get(u).add(v);
+        }
+
+}
+
 public class GraphArrayList {
 
     /**
